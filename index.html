@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kridit hisoblash || </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/main.css">
+
+</head>
+<body>
+    <div class="container">
+    <div class="row my-5">
+        <div class="col-6">
+            <label for="Kreditsum" class="d-block ">Kredit sum</label>
+            <input type="text" class="inp  form-control" id="Kreditsum">
+        </div>
+        <div class="col-6">
+
+            <label for="boshlangicht" class="d-block">Boshlang'ich to'lov Foizi</label>
+            <select class="inp  form-control" id="boshlangicht" >
+                <option value="" >  </option>
+                <option value="25%" >25%</option>
+                <option value="30%" >30%</option>
+                <option value="35%" >35%</option>
+                <option value="40%" >40%</option>
+            </select>
+
+        </div>
+        <div class="col-6">
+
+            <label for="YillikFoiz"  class="d-block">Yillik Foiz</label>
+
+            <select class="inp  form-control" id="YillikFoiz">
+                <option value="" >  </option>
+                <option value="12%" >12%</option>
+                <option value="15%" >15%</option>
+                <option value="20%" >20%</option>
+                <option value="25%" >25%</option>
+
+            </select>
+
+        </div>
+        <div class="col-6">
+            <label for="YillikMuddat"  class="d-block">Yillik Muddat</label>
+            <select class="inp  form-control" id="YillikMuddat">
+                <option value="" >  </option>
+                <option value="1 yil" >1 yil</option>
+                <option value="2 yil" >2 yil</option>
+                <option value="3 yil" >3 yil</option>
+                <option value="5 yil" >5 yil</option>
+                <option value="10 yil" >10 yil</option>
+                <option value="20 yil" >20 yil</option>
+            </select>
+        </div>
+        <div class="col-6">
+
+            <label for="Kalendaryili"  class="d-block">Kalendar yili</label>
+            <select class="inp  form-control" id="Kalendaryili">
+                <option>  </option>
+                <option value="2022-yil" >2022-yil</option>
+                <option value="2023-yil" >2023-yil</option>
+                <option value="2024-yil" >2024-yil</option>
+                <option value="2025-yil" >2025-yil</option>
+                <option value="2025-yil" >2026-yil</option>
+                <option value="2026-yil" >2027-yil</option>
+                <option value="2027-yil" >2028-yil</option>
+                <option value="2028-yil" >2029-yil</option>
+                <option value="2029-yil" >2030-yil</option>
+                <option value="2030-yil" >2031-yil</option>
+                <option value="2031-yil" >2032-yil</option>
+                <option value="2032-yil" >2033-yil</option>
+                <option value="2033-yil" >2034-yil</option>
+                <option value="2034-yil" >2035-yil</option>
+                <option value="2035-yil" >2036-yil</option>
+                <option value="2036-yil" >2037-yil</option>
+                <option value="2037-yil" >2038-yil</option>
+                <option value="2038-yil" >2039-yil</option>
+                <option value="2039-yil" >2040-yil</option>
+                <option value="2040-yil" >2041-yil</option>
+                <option value="2041-yil" >2042-yil</option>
+                <option value="2042-yil" >2043-yil</option>
+                <option value="2043-yil" >2044-yil</option>
+                <option value="2044-yil" >2045-yil</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <label for="Kalendaroyi"  class="d-block">Kalendar oyi</label>
+            <select class="inp  form-control" id="Kalendaroyi">
+                <option value="" >  </option>
+                <option value="Yanvar">Yanvar</option>
+                <option value="Fevral">Fevral</option>
+                <option value="Mart">Mart</option>
+                <option value="Aprel">Aprel</option>
+                <option value="May">May</option>
+                <option value="Iyun">Iyun</option>
+                <option value="Iyul">Iyul</option>
+                <option value="Avgust">Avgust</option>
+                <option value="Sentabr">Sentabr</option>
+                <option value="Oktabr">Oktabr</option>
+                <option value="Noyabr">Noyabr</option>
+                <option value="Dekabr">Dekabr</option>
+            </select>
+
+
+        </div>
+        <input onclick="inner()" type="submit" value="Add Cridt" class="btn  btn-warning btn-block btn-primary">
+    </div>
+
+    </div>
+    <div class="table" >
+
+            <table class="table table-striped mt5 text-center table-hover ">
+                <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Yil</th>
+                    <th>Oy</th> 6
+                    <th>Asosiy qarz</th>
+                    <th>oylik to'lov</th>
+                    <th>Foiz to'lov</th>
+                    <th id="jami" >Jami to'lov</th>
+                </tr>
+                </thead>
+                <tbody id="kridit-list" ></tbody>
+
+            </table>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

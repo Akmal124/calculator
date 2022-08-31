@@ -1,0 +1,19 @@
+.inp{
+    width: 300px;
+}
+.ok{
+    transform: translate(800px,1rem);
+}
+.shape{
+    margin-left: 400px;
+    background-color: red;
+}
+
+
+
+
+.btn{
+   margin: 25px;
+}
+
+
